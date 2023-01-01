@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid grey;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #f1f5f8;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 10px;
+}
+
+.wrapper .toDoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 35px 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  width: 95vw;
+  max-width: 45rem;
+}
+
+.wrapper .toDoList h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@media (min-width: 991px) {
+  .wrapper .toDoList h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+  }
+}
+
+.wrapper .toDoList form {
+  padding: 20px 0;
+  margin-right: -8px;
+  min-width: 100%;
+}
+
+.wrapper .toDoList form input {
+  font-size: 16px;
+  padding: 5px 12px;
+  background-color: #f1f5f8;
+  letter-spacing: 1px;
+  border-radius: 5px 0 0 5px;
+  min-width: 70%;
+}
+
+@media (min-width: 991px) {
+  .wrapper .toDoList form input {
+    padding: 10px 17px;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}
+
+.wrapper .toDoList form button {
+  font-size: 16px;
+  padding: 5px 12px;
+  margin-left: -4px;
+  background-color: #a5d5f8;
+  color: black;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+  will-change: background-color;
+  border-radius: 0 5px 5px 0;
+  min-width: 28%;
+}
+
+.wrapper .toDoList form button:hover {
+  background-color: #63bbfa;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 991px) {
+  .wrapper .toDoList form button {
+    padding: 10px 17px;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrapper .toDoList form {
+    padding: 30px 0;
+    min-width: 100%;
+  }
+}
+
+.wrapper .toDoList main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  padding: 0 5px;
+}
+
+.wrapper .toDoList main .groceryItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 5px;
+  border-radius: 7px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  will-change: background-color;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.wrapper .toDoList main .groceryItem:hover {
+  background-color: #f1f5f8;
+}
+
+.wrapper .toDoList main .groceryItem p {
+  font-size: 16px;
+  word-break: break-all;
+  padding-right: 20px;
+}
+
+@media (min-width: 991px) {
+  .wrapper .toDoList main .groceryItem p {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}
+
+.wrapper .toDoList main .groceryItem .groceryImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .toDoList main .groceryItem .groceryImg .editBtn {
+  color: greenyellow;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
+  will-change: color;
+  font-size: 15px;
+  margin-right: 10px;
+  background-color: inherit;
+}
+
+.wrapper .toDoList main .groceryItem .groceryImg .editBtn:hover {
+  color: green;
+}
+
+.wrapper .toDoList main .groceryItem .groceryImg .deleteBtn {
+  color: red;
+  will-change: color;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
+  font-size: 15px;
+  background-color: inherit;
+}
+
+.wrapper .toDoList main .groceryItem .groceryImg .deleteBtn:hover {
+  color: #7e0303;
+}
+
+.wrapper .toDoList button {
+  font-size: 20px;
+  background-color: #fff;
+  color: #e66b6b;
+  letter-spacing: 3px;
+}
+
+.wrapper .toDoList button:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  .wrapper .toDoList {
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    padding: 50px 20px;
+  }
+}
